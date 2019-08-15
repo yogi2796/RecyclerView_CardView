@@ -31,10 +31,7 @@ public class MainActivity extends AppCompatActivity {
                     1,"laptop 5gb ram 500gb","ghee", 3.6, 20, R.drawable.dosa
                 ));
 
-        productList.add(
-                new Product(
-                        1,"dosa","ghee", 3.6, 20, R.drawable.dosa
-                ));
+
 
         productList.add(
                 new Product(
