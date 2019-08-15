@@ -3,43 +3,43 @@ package com.example.recyclerview_cardview;
 public class Product {
 
     private int id;
-    private String itemname1;
-    private String shortdesc1;
-    private double rating1;
-    private double price1;
-    private int imageview1;
+    private String title;
+    private String shortdesc;
+    private double rating;
+    private double price;
+    private int image;
 
-    public Product(int id, String itemname1, String shortdesc1, double rating1, double price1, int imageview1) {
+
+    public Product(int id, String title, String shortdesc, double rating, double price, int image) {
         this.id = id;
-        this.itemname1 = itemname1;
-        this.shortdesc1 = shortdesc1;
-        this.rating1 = rating1;
-        this.price1 = price1;
-        this.imageview1 = imageview1;
+        this.title = title;
+        this.shortdesc = shortdesc;
+        this.rating = rating;
+        this.price = price;
+        this.image = image;
     }
-
 
     public int getId() {
         return id;
     }
 
-    public String getItemname1() {
-        return itemname1;
+    public String getTitle() {
+        return title;
     }
 
-    public String getShortdesc1() {
-        return shortdesc1;
+    public String getShortdesc() {
+        return shortdesc;
     }
 
-    public double getRating1() {
-        return rating1;
+    public double getRating() {
+        return rating;
     }
 
-    public double getPrice1() {
-        return price1;
+    public double getPrice() {
+        return price;
     }
 
-    public int getImageview1() {
-        return imageview1;
+    public int getImage() {
+        return image;
     }
 }

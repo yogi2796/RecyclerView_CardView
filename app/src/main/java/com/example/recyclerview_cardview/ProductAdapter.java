@@ -32,14 +32,14 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
     @Override
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
-            Product product =productList.get(position);
+            Product product = productList.get(position);
 
-            holder.itemname1.setText(product.getItemname1());
-            holder.shortdesc1.setText(product.getShortdesc1());
-            holder.rating1.setText(String.valueOf(product.getRating1()));
-            holder.price1.setText(String.valueOf(product.getPrice1()));
+            holder.itemname1.setText(product.getTitle());
+            holder.shortdesc1.setText(product.getShortdesc());
+            holder.rating1.setText(String.valueOf(product.getRating()));
+            holder.price1.setText(String.valueOf(product.getPrice()));
 
-            holder.imageview1.setImageDrawable(ctx.getResources().getDrawable(product.getImageview1()));
+            holder.imageview1.setImageDrawable(ctx.getResources().getDrawable(product.getImage()));
     }
 
     @Override
@@ -53,11 +53,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
         public ProductViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.itemname1 = itemname1;
-            this.shortdesc1 = shortdesc1;
-            this.rating1 = rating1;
-            this.price1 = price1;
-            this.imageview1 = imageview1;
+            this.itemname1 = itemView.findViewById(R.id.textViewTitle);
+            this.shortdesc1 = itemView.findViewById(R.id.textViewShortDesc);
+            this.rating1 = itemView.findViewById(R.id.textViewRating);
+            this.price1 = itemView.findViewById(R.id.textViewPrice);
+            this.imageview1 = itemView.findViewById(R.id.imageView);
         }
 
 

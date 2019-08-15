@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -10,50 +11,44 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="8dp">
 
             <ImageView
-                android:id="@+id/imageview1"
-                android:layout_width="150dp"
-                android:layout_height="200dp"
-                android:background="#0f0f0f"
-                android:padding="5dp"
-                android:layout_margin="5dp"
-                />
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:padding="4dp" />
 
             <TextView
-                android:id="@+id/itemname1"
+                android:id="@+id/textViewTitle"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textViewShortDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_toRightOf="@+id/imageview1"
-                android:padding="10dp"
-                android:text="item name"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                android:textSize="25dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/shortdesc1"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_below="@+id/itemname1"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/imageview1"
-                android:padding="10dp"
-                android:text="short description"
+                android:layout_toRightOf="@id/imageView"
+                android:text="13.3 Inch, 256 GB"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
             <TextView
-                android:id="@+id/rating1"
+                android:id="@+id/textViewRating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/shortdesc1"
+                android:layout_below="@id/textViewShortDesc"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:layout_toRightOf="@id/imageview1"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
                 android:background="@color/colorPrimary"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -62,18 +57,18 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/price1"
+                android:id="@+id/textViewPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/rating1"
+                android:layout_below="@id/textViewRating"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/imageview1"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
                 android:text="INR 56990"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:textStyle="bold" />
-        </RelativeLayout>
 
+        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 
